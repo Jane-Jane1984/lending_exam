@@ -157,11 +157,51 @@
                      </div>
                   </div>
                </div>
-               
-
             </div>
-            <div class="block__write-to-us">
-               <div class="block__title title__features">Write to us</div>
+            <div class="block__title title__write">Write to us</div>
+            <div class="form-container">
+               <form action="#">
+                  <div class="user__block">
+                     <div class="user-name">
+                        <p class="name formtitle">Your name</p>
+                        <input type="text" class = "userdata" name="username">
+                     </div>
+                     <div class="user-phone">
+                        <p class="phone formtitle">Phone</p>
+                        <input type="tel" class = "userdata" name="userphone">
+                     </div>
+                     <div class="user-mail">
+                        <p class="mail formtitle">Email</p>
+                        <input type="tel" class = "userdata" name="usermail">
+                     </div>
+                  </div>
+                  <div class="connect">
+                     <p class="connect-me-with formtitle">Connect me with</p>
+                     <p class="connect-me-with"><input type="radio" name = "connect-with" value ="email">Email</p>
+                     <p class="connect-me-with"><input type="radio" name = "connect-with" value ="phone">Phone</p>
+                     <p class="connect-me-with"><input type="radio" name = "connect-with" value ="tg">Telegramm</p>
+                     
+                  </div>
+                  <div class="topics-message">
+                     <div class="topics formtitle">Topics</div>
+                     <select name="topic">
+                        <option value="story">Post my story</option>
+                        <option value="journey">Join the journey</option>
+                        <option value="film">Take part in the filming</option>
+                     </select>
+                     <div class="message formtitle">Message</div>
+                     <textarea name="usermessage" class = "usermessage"></textarea>
+                  </div>
+                  <div class="check-send">
+                     <div class="check">
+                        <p ><input type="checkbox" name="human"></p>
+                        <p class="human-text formtitle">I am a human </p>
+                     </div>
+                     <div class="send">
+                        <button class="sendbtn" type="submit">send</button>
+                     </div>
+                  </div>
+            </form>
             </div>
          </div> 
       </div>
