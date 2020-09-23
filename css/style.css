@@ -115,6 +115,9 @@ body {
 .tour__name-media {
    display: none;
 }
+.header__burger {
+   display: none;
+}
 .social-links-row {
 }
 .social__list {
@@ -139,9 +142,6 @@ body {
    }
 }
 @media (max-width: 600px) {
-   .header-row {
-      justify-content: center;
-   }
    .social-links-row {
       display: none;
    }
@@ -150,9 +150,38 @@ body {
    }
    .tour__name-media {
       display: block;
-      font-size: 20px;
+      font-size: 16px;
       color: black;
       text-transform: uppercase;
+   }
+   .header__burger {
+      display: block;
+      position: relative;
+      width: 30px;
+      height: 20px;
+   }
+   .header__burger:before,
+   .header__burger:after {
+      content: "";
+      background-color: #000;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      left: 0;
+   }
+   .header__burger:before {
+      top: 0;
+   }
+   .header__burger:after {
+      bottom: 0;
+   }
+   .burger__line {
+      position: absolute;
+      background-color: #000;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      top: 9px;
    }
 }
 
